@@ -1,0 +1,48 @@
+{
+  "kind": "fresh full rerun of recovered notebook",
+  "python": "3.10.14",
+  "torch": "2.5.1+cu121",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "epochs": 15,
+  "train_samples": 40000,
+  "held_out_validation_samples_not_used_by_original_loop": 10000,
+  "test_samples": 10000,
+  "test_accuracy_by_epoch_3_to_15_percent": [
+    65.83,
+    62.02,
+    75.4,
+    78.42,
+    81.34,
+    81.48,
+    83.12,
+    86.27,
+    87.13,
+    88.09,
+    88.76,
+    88.89,
+    88.93
+  ],
+  "best_test_accuracy_percent": 88.93,
+  "best_accuracy_within_60_seconds_percent": 78.42,
+  "adaptations": [
+    "DataLoader num_workers=0 for Windows notebook-defined Dataset",
+    "One model eval-mode forward smoke check before training; no fixed training RNG seed"
+  ],
+  "limitations": [
+    "Original training loop evaluates test set every epoch",
+    "No fully deterministic training seed",
+    "No original weights were recovered"
+  ],
+  "elapsed_seconds_final_epoch": 153.2,
+  "date": "2026-10-18",
+  "package_versions": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "datasets": "3.6.0",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.7.1",
+    "matplotlib": "3.9.4",
+    "Pillow": "11.0.0",
+    "huggingface-hub": "2.2.0"
+  }
+}
